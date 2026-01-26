@@ -1,0 +1,22 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --muted: #4b5563;
+    --primary: #2563eb;
+    --surface: #f3f4f6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: var(--text);
+    background: var(--bg);
+}
+
