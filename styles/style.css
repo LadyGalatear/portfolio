@@ -1,6 +1,6 @@
 :root {
     --bg: #ffffff;
-    --text: #000000;
+    --text: #333333;
     --muted: #4b5563;
     --primary: #2563eb;
     --surface: #f3f4f6;
@@ -50,3 +50,68 @@ header {
     border-radius: 12px;
 }
 
+h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 8px 0 8px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0 12px 0;
+}
+
+p {
+    margin: 8px 12px;
+    color: var(--muted);
+}
+
+.section {
+    margin-top: 20px;
+    padding: 16px;
+    background: var(--surface);
+    border-radius: 12px;
+}
+
+.profile-pic {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.skills, .experience {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+}
+
+.skills, .experience li {
+    padding: 6px 0 6px 20px;
+    position: relative;
+}
+
+.skills li::before, .experience li::before {
+    content: "•";
+    position: absolute;
+    left: 6px;
+    color: var(--primary);
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+}
