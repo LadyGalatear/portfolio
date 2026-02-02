@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "images/3b-favicon.jpg">
+    <link rel = "stylesheet" href = "styles/form-style.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class = "form-wrap">
+        <form id = "contact-form" action = "#" method = "get">
+            <h1>Contact Form</h1>
+
+            <fieldset>
+                <div class = "grid-3">
+                    <div class = "field">
+                        <label for = "first-name">First Name</label>
+                        <input type = "text" name = "first-name" id = "first-name">
+                    </div>
+
+                    <div class = "field">
+                        <label for = "last-name">Last Name</label>
+                        <input type = "text" name = "last-name" id = "last-name">
+                    </div>
+
+                    <div class = "field">
+                        <label for = "job-title">Job Title</label>
+                        <input type = "text" name = "job-title" id = "job-title">
+                    </div>
+                
+                    <div class = "field">
+                        <label for = "company">Company</label>
+                        <input type = "text" name = "company" id = "company">
+                    </div>
+
+                    <div class = "field">
+                        <label for = "linkedin">LinkedIn URL</label>
+                        <input type = "text" name = "linkedin" id = "linkedin">
+                    </div>
+
+                    <div class = "field">
+                        <label for = "email">Email Address</label>
+                        <input type = "text" name = "email" id = "email">
+                    </div>
+
+                    <div class = "field meet">
+                        <label for = "meet">How did we meet?</label>
+                            <select id = "meet" name = "meet">
+                                <option value = "none">Please select</option>
+                                <option value = "conference">Conference</option>
+                                <option value = "referral">Referral</option>
+                                <option value = "coworker">Current Workplace</option>
+                                <option value = "former-coworker">Former Workplace</option>
+                                <option value = "college">College</option>
+                                <option value = "online">Online</option>
+                                <option value = "other">Other</option>
+                            </select>
+                    </div>
+
+                    <div class = "field other">
+                        <label for = "other">Other (please specify)</label>
+                        <input type = "text" name = "other" id = "other">
+                    </div>
+                </div>
+
+                    <div class = "field message">
+                        <label for = "comments">Message</label>
+                        <textarea id = "comments" name = "comments" rows = "5"></textarea>
+                    </div>
+            </fieldset>
+
+            <div class = "field-inline">
+                <label for = "mailing-list">
+                    <input type = "checkbox" id = "mailing-list" name = "mailing-list">
+                        Please add me to your mailing list
+                </label>
+            </div>
+
+            <div class = "field-inline">
+                <span id = "email-format">Choose an email format:
+                    <label for = "html">
+                        <input type = "radio" id = "html" value = "html" name = "email-format">HTML
+                    </label>
+                    <label for = "text">
+                        <input type = "radio" id = "text" value = "text" name = "email-format">Text
+                    </label>
+                </span>
+            </div>
+
+            <button class = "button" type = "submit" id = "submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
