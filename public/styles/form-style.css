@@ -104,6 +104,11 @@ body {
     transform: translateY(1px);
 }
 
+.err {
+    color: darkred;
+    display: none;
+}
+
 @media (max-width: 800px) {
     .grid-3 {
         grid-template-columns: 1fr;

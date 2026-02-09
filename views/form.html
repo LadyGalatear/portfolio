@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "icon" href = "images/3b-favicon.jpg">
     <link rel = "stylesheet" href = "styles/form-style.css">
+    <script src = "js/form.js" defer></script>
     <title>Contact Form</title>
 </head>
 <body>
@@ -17,11 +18,17 @@
                     <div class = "field">
                         <label for = "first-name">First Name</label>
                         <input type = "text" name = "first-name" id = "first-name">
+                        <span class = "err" id = "err-fname">
+                            First name is required.
+                        </span>
                     </div>
 
                     <div class = "field">
                         <label for = "last-name">Last Name</label>
                         <input type = "text" name = "last-name" id = "last-name">
+                        <span class = "err" id = "err-lname">
+                            Last name is required.
+                        </span>
                     </div>
 
                     <div class = "field">
@@ -37,11 +44,17 @@
                     <div class = "field">
                         <label for = "linkedin">LinkedIn URL</label>
                         <input type = "text" name = "linkedin" id = "linkedin">
+                        <span class = "err" id = "err-linkedin">
+                            URL must start with correct prefix.
+                        </span>
                     </div>
 
                     <div class = "field">
                         <label for = "email">Email Address</label>
                         <input type = "text" name = "email" id = "email">
+                        <span class = "err" id = "err-email">
+                            Email is required if requesting mailing list.
+                        </span>
                     </div>
 
                     <div class = "field meet">
@@ -56,6 +69,9 @@
                                 <option value = "online">Online</option>
                                 <option value = "other">Other</option>
                             </select>
+                        <span class = "err" id = "err-meet">
+                            This field is required.
+                        </span>
                     </div>
 
                     <div class = "field other">
