@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Get!</title>
+</head>
+<body>
+    <h1>Your post has been processed!</h1>
+    <h2>Post Contents</h2>
+    <p>Date & Time: <%= entry.timestamp.toLocaleString() %></p>
+    <p>Name: <%= entry.first_name %> <%= entry.last_name %></p>
+    <p>Job Title: <%= entry.job_title %></p>
+    <p>Company: <%= entry.company %></p>
+    <p>LinkedIn URL: <a href = "<%= entry.linkedin %>"><%= entry.linkedin %></a></p>
+    <p>Email: <%= entry.email %></p>
+    <p>How did we meet?: <%= entry.meet %> </p>
+    <p>Other: <%= entry.other %></p>
+    <p>Comment: <%= entry.comments %></p>
+    <a href = "/guestbook">Return to the guestbook.</a>
+    <p><a href ="/admin">(Don't go here.)</a></p>
+</body>
+</html>
