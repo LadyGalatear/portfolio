@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "icon" href = "images/3b-favicon.jpg">
     <link rel = "stylesheet" href = "styles/form-style.css">
+    <!--
     <script src = "js/form.js" defer></script>
+    -->
     <title>Contact Form</title>
 </head>
 <body>
     <%- include('partials/nav') %>
+    <% if (typeof errors != 'undefined') { %>
+        <% errors.forEach(error => { %>
+            <p><%= error %></p>
+        <% }); %>
+    <% } %>
     <div class = "form-wrap">
         <form id = "contact-form" action = "/guestbook" method = "post">
             <h1>Contact Form</h1>

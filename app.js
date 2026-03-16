@@ -5,6 +5,8 @@ import mysql2 from 'mysql2';
 
 import dotenv from 'dotenv';
 
+import {validateForm} from './validation.js';
+
 dotenv.config();
 
 // Create an express application
@@ -62,6 +64,14 @@ app.get('/guestbook', (req, res) => {
 app.post('/guestbook', async (req, res) => {
     try {
         const contact = req.body;
+
+        const valid = validateForm(contact);
+
+        if (!valid.isValid) {
+            console.log(valid);
+            res.render('form', {errors: valid.errors});
+            return;
+        }
 
         console.log('New post submitted: ', contact);
 
